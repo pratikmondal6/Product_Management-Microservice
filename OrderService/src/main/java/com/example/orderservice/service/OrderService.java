@@ -2,12 +2,15 @@ package com.example.orderservice.service;
 
 import com.example.orderservice.entity.Order;
 import com.example.orderservice.entity.OrderLineItems;
+import com.example.orderservice.model.InventoryResponse;
 import com.example.orderservice.model.OrderLineItemsModel;
 import com.example.orderservice.model.OrderRequestModel;
 import com.example.orderservice.repository.OrderRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.reactive.function.client.WebClient;
 
+import java.util.Arrays;
 import java.util.List;
 import java.util.UUID;
 
@@ -16,6 +19,9 @@ public class OrderService {
 
     @Autowired
     OrderRepository orderRepository;
+
+    @Autowired
+    WebClient webClient;
 
 
     public void placeOrder(OrderRequestModel orderRequestModel){
@@ -30,7 +36,26 @@ public class OrderService {
                 .toList();
 
         order.setOrderLineItemsList(orderLineItems);
-        orderRepository.save(order);
+
+        List<String> skuCodes =  order.getOrderLineItemsList().stream()
+                .map(orderLineItem -> orderLineItem.getSkuCode()).toList();
+
+        //check stock
+        InventoryResponse[] inventoryResponseArray =  webClient.get()
+                .uri("http://localhost:8082/api/inventory",uriBuilder -> uriBuilder.queryParam("skuCode", skuCodes).build())
+                        .retrieve()
+                                .bodyToMono(InventoryResponse[].class)
+                                        .block();
+
+        boolean allProductsInStock =
+                Arrays.stream(inventoryResponseArray).allMatch(inventoryResponse -> inventoryResponse.isInStock());
+
+       if(allProductsInStock){
+           orderRepository.save(order);
+       }else {
+           throw new IllegalArgumentException("Stock Finished, try later");
+
+       }
 
     }
 
