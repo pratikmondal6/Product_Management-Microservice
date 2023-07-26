@@ -1,5 +1,5 @@
 server:
-  port: 8082
+  port: 0
 
 spring:
   datasource:
@@ -12,3 +12,9 @@ spring:
       ddl-auto: create-drop
     show-sql: true
     database-platform: org.hibernate.dialect.MySQL8Dialect
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+

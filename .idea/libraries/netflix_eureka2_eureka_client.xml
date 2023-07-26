@@ -1,0 +1,34 @@
+<component name="libraryTable">
+  <library name="netflix.eureka2.eureka.client" type="repository">
+    <properties maven-id="com.netflix.eureka2:eureka-client:2.0.0-DP4" />
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/netflix/eureka2/eureka-client/2.0.0-DP4/eureka-client-2.0.0-DP4.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/slf4j/slf4j-api/1.7.7/slf4j-api-1.7.7.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/javax/inject/javax.inject/1/javax.inject-1.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/netflix/eureka2/eureka-core/2.0.0-DP4/eureka-core-2.0.0-DP4.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/netflix/servo/servo-core/0.7.7/servo-core-0.7.7.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/netflix/servo/servo-internal/0.7.7/servo-internal-0.7.7.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/14.0.1/guava-14.0.1.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/google/code/findbugs/annotations/2.0.0/annotations-2.0.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/io/reactivex/rxjava/1.0.0/rxjava-1.0.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/avro/avro/1.7.7/avro-1.7.7.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/jackson/jackson-core-asl/1.9.13/jackson-core-asl-1.9.13.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/codehaus/jackson/jackson-mapper-asl/1.9.13/jackson-mapper-asl-1.9.13.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/thoughtworks/paranamer/paranamer/2.3/paranamer-2.3.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/xerial/snappy/snappy-java/1.0.5/snappy-java-1.0.5.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/com/netflix/ocelli/ocelli-core/0.0.6/ocelli-core-0.0.6.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/apache/commons/commons-compress/1.7/commons-compress-1.7.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/org/tukaani/xz/1.4/xz-1.4.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/io/reactivex/rxnetty/0.4.0/rxnetty-0.4.0.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/io/netty/netty-codec-http/4.0.21.Final/netty-codec-http-4.0.21.Final.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/io/netty/netty-codec/4.0.21.Final/netty-codec-4.0.21.Final.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/io/netty/netty-handler/4.0.21.Final/netty-handler-4.0.21.Final.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/io/netty/netty-transport-native-epoll/4.0.21.Final/netty-transport-native-epoll-4.0.21.Final.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/io/netty/netty-common/4.0.21.Final/netty-common-4.0.21.Final.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/io/netty/netty-buffer/4.0.21.Final/netty-buffer-4.0.21.Final.jar!/" />
+      <root url="jar://$MAVEN_REPOSITORY$/io/netty/netty-transport/4.0.21.Final/netty-transport-4.0.21.Final.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
