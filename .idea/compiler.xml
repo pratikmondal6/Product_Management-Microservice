@@ -10,6 +10,7 @@
         <module name="EurekaClient" />
         <module name="DiscoveryServer" />
         <module name="OrderService" />
+        <module name="ApiGateway" />
         <module name="productService" />
         <module name="InventoryService" />
       </profile>
@@ -17,6 +18,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ApiGateway" options="-parameters" />
       <module name="DiscoveryServer" options="-parameters" />
       <module name="EurekaClient" options="-parameters" />
       <module name="InventoryService" options="-parameters" />
